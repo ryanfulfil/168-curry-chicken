@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderMenu('all');
     initFilterTabs();
     initMealBuilder();
+    renderReviews();
     initMobileNav();
 });
 
@@ -85,6 +86,30 @@ function renderMenu(categoryFilter = 'all') {
                         + Add to Pre-Order
                     </button>
                 </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Render Reviews Section Dynamically
+function renderReviews() {
+    const grid = document.getElementById('reviews-grid');
+    if (!grid || !stallInfo.reviews) return;
+
+    grid.innerHTML = stallInfo.reviews.map(r => `
+        <div class="review-card">
+            <div>
+                <div class="review-stars">
+                    ${'★'.repeat(Math.floor(r.rating))} ${r.rating % 1 !== 0 ? '½' : ''}
+                </div>
+                <p class="review-quote">"${r.quote}"</p>
+            </div>
+            <div class="review-author">
+                <div>
+                    <h4>${r.author}</h4>
+                    <span style="font-size: 0.78rem; color: var(--curry-gold);">${r.tag}</span>
+                </div>
+                <span class="badge badge-red">Verified Review</span>
             </div>
         </div>
     `).join('');

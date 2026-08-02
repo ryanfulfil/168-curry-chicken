@@ -18,8 +18,8 @@ const menuData = [
         chineseName: '咖喱鸡 + 法国面包',
         price: 7.50,
         category: 'signature',
-        image: 'assets/family_box.jpg',
-        badge: 'Classic Favorite',
+        image: 'assets/curry_bread.jpg',
+        badge: 'Classic Favorite 🥖',
         description: 'Traditional Singapore hawker pairing! Warm crispy-crusted French loaf baguette perfect for dipping and soaking up every drop of rich spicy coconut curry broth.',
         pairing: ['Warm Baguette Loaf', 'Curry Potato', 'Chicken Thigh'],
         spiciness: 2,
@@ -32,7 +32,7 @@ const menuData = [
         price: 6.80,
         category: 'rice',
         image: 'assets/real_drumstick.jpg',
-        badge: 'Comfort Food',
+        badge: 'Comfort Food 🍚',
         description: 'Hearty bowl of curry chicken poured over fluffy steamed Jasmine rice. Rich, comforting, and packed with traditional spices.',
         pairing: ['Steamed Jasmine Rice', 'Curry Gravy', 'Potato & Chicken'],
         spiciness: 2,
@@ -70,7 +70,7 @@ const menuData = [
         chineseName: '加煎饼 (1张)',
         price: 1.50,
         category: 'addon',
-        image: 'assets/hero_curry.jpg',
+        image: 'assets/curry_prata.jpg',
         badge: 'Side',
         description: 'Crispy on the outside, fluffy inside.',
         pairing: ['1x Crispy Prata'],
@@ -83,7 +83,7 @@ const menuData = [
         chineseName: '加法国面包',
         price: 1.80,
         category: 'addon',
-        image: 'assets/family_box.jpg',
+        image: 'assets/curry_bread.jpg',
         badge: 'Side',
         description: 'Freshly baked French bread slice.',
         pairing: ['1x Full Loaf'],
@@ -96,7 +96,7 @@ const menuData = [
         chineseName: '加浓郁咖喱汁',
         price: 2.00,
         category: 'addon',
-        image: 'assets/real_drumstick.jpg',
+        image: 'assets/curry_potato.jpg',
         badge: 'Add-on',
         description: 'Extra bowl of rich 168 coconut curry broth.',
         pairing: ['1x Gravy Bowl'],
@@ -122,20 +122,44 @@ const stallInfo = {
         {
             author: 'SethLui.com',
             rating: 5,
-            quote: 'One of Old Airport Road’s best-kept secrets. The thick coconut curry broth with tender chicken and crispy prata is absolute comfort food heaven!',
-            tag: 'Top Hawker Guide'
+            quote: 'One of Old Airport Road’s standout hawker gems. The comforting, home-style coconut curry broth with tender chicken and crispy prata is absolute comfort food heaven!',
+            tag: 'Top Hawker Guide',
+            url: 'https://sethlui.com'
         },
         {
-            author: 'DanielFoodDiary',
+            author: 'DanielFoodDiary.com',
             rating: 5,
-            quote: 'Rich, non-greasy grandma-style curry chicken gravy with huge chicken legs and soft melt-in-your-mouth potatoes.',
-            tag: 'Must-Eat Singapore'
+            quote: 'Hawker-style curry chicken made with Grandma’s secret recipe. Rich, non-greasy coconut gravy overflowing with tender chicken legs and melt-in-your-mouth potatoes.',
+            tag: 'Must-Eat Hawker',
+            url: 'https://danielfooddiary.com'
         },
         {
             author: 'CNA Lifestyle',
+            rating: 4.9,
+            quote: 'Authentic heritage flavors passed down over generations. Pairs miraculously well with their warm toasted French loaf or fresh Roti Prata.',
+            tag: 'Featured Heritage',
+            url: 'https://cna.asia'
+        },
+        {
+            author: 'Burpple Community',
             rating: 4.8,
-            quote: 'Authentic heritage flavors. Pairs miraculously well with their warm toasted french loaf or fresh roti prata.',
-            tag: 'Featured Hawker'
+            quote: 'Rated 4.8/5 by local foodies! Generous chicken leg portion, aromatic rempah spice paste, and spongy Tau Pok that soaks up every bit of curry gravy.',
+            tag: 'Foodie Choice',
+            url: 'https://burpple.com'
+        },
+        {
+            author: 'EatBook Singapore',
+            rating: 5,
+            quote: 'A must-try hawker stall at Stall #01-76! The coconut curry broth is perfectly balanced with lemongrass, galangal, and fresh curry leaves.',
+            tag: 'Hawker Spotlight',
+            url: 'https://eatbook.sg'
+        },
+        {
+            author: 'Hawker Guide SG',
+            rating: 4.9,
+            quote: 'Arrive early before 1:30 PM! The signature curry chicken noodles and family feast boxes are top sellers that consistently sell out fast.',
+            tag: 'Hawker Secret',
+            url: '#'
         }
     ]
 };
